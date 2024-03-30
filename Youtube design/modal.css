@@ -1,0 +1,33 @@
+* {
+    font-family: Arial;
+}
+
+body{
+    background-color: rgb(150, 150, 150);
+}
+
+.modal-object{
+    height: 90px;
+    background-color: white;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 300px;
+    padding: 10px 0px 10px 15px;
+
+}
+
+.close-button{
+    border-radius: 3px;
+    border: 1.5px solid rgb(150, 150, 150);
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

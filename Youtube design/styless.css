@@ -1,0 +1,366 @@
+/* YOUTUBE PAGE DESIGN */
+
+/*-----------*/
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+.thumbnail{
+    width: 100%;
+}
+
+.search-bar{
+    display: block;
+}
+
+body{
+    font-family: "Roboto", Arial;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(248, 248,248);
+}
+
+/*.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.video-preview {
+width: 300px;
+display: inline-block;
+vertical-align: top;
+margin-right: 15px;
+}
+
+.channel-picture {
+display: inline-block;
+width: 50px;
+vertical-align: top;
+}
+
+.video-info {
+display: inline-block;
+width: 200px;
+}
+
+*/
+
+/*-----------VIDEO STATS---------------*/
+
+/* .video-stats{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.video-author{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} */
+
+/*-----------*/
+
+/* .profile-picture{
+    border-radius: 50%;
+    width: 100%;
+} */
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+  }
+
+.thumbnail-row{
+    margin-bottom: 12px;
+    position: relative;
+}
+
+
+/*-------VIDEO---------*/
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author,
+    .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+/*----USING A MEDIA QUERY TO ADDRESS THE RESPONSIVENESS OF THE PAGE----*/
+@media (max-width: 750px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and  (max-width: 999){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+/*----HEADER SECTION----*/
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
+}
+
+/*----LEFT SECTION----*/
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.youtube-logo{
+    height: 20px;
+}
+
+/*----MIDDLE SECTION----*/
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
+    width: 0;
+}
+
+.search-bar::placeholder{
+    font-size: 16px;
+}
+
+.search-button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(236, 236, 236);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.search-button, 
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-tooltip-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-tooltip-container .tooltip{
+    position: absolute;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.15s;
+    background-color: gray;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-tooltip-container:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+}
+.search-icon{
+    height: 25px;
+}
+
+.voice-search-icon{
+    height: 24px;
+}
+
+/*----RIGHT SECTION----*/
+.right-section{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.upload-icon{
+    height: 24px;
+}
+.youtube-apps-icon{
+    height: 24px;
+}
+.notifications-icon{
+    height: 24px;
+}
+
+.notifications-icon-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    font-size: 11px;
+    border-radius: 10px;
+}
+.current-user-icon{
+    height: 32px;
+    border-radius: 50%;
+}
+
+/*----SIDEBAR----*/
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar-link:hover{
+    background-color: rgb(235,235,235);
+}
+
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div{
+    font-size: 10px;
+}
+
+/*---NOTES---*/
+
+/* font-weight = 400 -normal
+500 - semi-bold
+700 - bold 
+
+
+
+Elements above, will appear over elements below, hence,
+use z-index for setting order 
+
+Use semantic elements like header, section, and main, for screenreaders and bots
+
+*/
+
