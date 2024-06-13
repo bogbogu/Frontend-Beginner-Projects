@@ -1,0 +1,86 @@
+*{
+    font-family: 'Roboto';
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    height: 250px;
+}
+
+.section{
+    width: 1fr;
+    font-size: 20px;
+}
+
+.profile-picture{
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 15px;
+
+}
+
+.user-details{
+    display: flex;
+    flex-direction: row;
+}
+
+.display-name{
+    font-weight: 700;
+    padding: 0px;
+}
+
+.username{
+    margin-left: 5px;
+    color: gray;
+}
+
+.post-text{
+    margin-top: 0px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.post-overview{
+    display: flex;
+    height: 150px;
+    border: 2px solid rgb(216, 214, 214);
+    border-radius: 10px;
+    width: 400px;
+    height: fit-content;
+    background-image: url(/Refresher/dev.png);
+    background-repeat: no-repeat;
+    background-size: 110px 100px;
+    background-position: ;
+    flex-direction: column;
+    justify-content:right;
+    font-size: 15px;
+}
+
+.youtube-post{
+    margin-left: 120px;
+    height: 100px;
+}
+
+.youtube-link{
+    color: gray;
+    margin-bottom: 0px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.post-description{
+    margin-top: 5px;
+    line-height: 27px;
+    font-weight: 500;
+}
+

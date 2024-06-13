@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.home{
+    margin-left: 20px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+}
+
+.home:active{
+    transform: scale(0.95);
+}
+.search-bar{
+    border-radius: 15px;    
+    border: none;
+    width: 500px;
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: gray;
+}
+
+.download{
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.download:active{
+    transform: scale(0.95);
+}

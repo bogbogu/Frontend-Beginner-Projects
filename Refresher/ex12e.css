@@ -1,0 +1,38 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.notifications{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 200px;
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 0px 15px;
+}
+
+.menu-button{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+.notification-count{
+    color: white;
+    background-color: rgb(54, 54, 248);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
