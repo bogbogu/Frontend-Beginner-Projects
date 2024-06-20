@@ -69,6 +69,7 @@ body {
   opacity: 1;
   transition: 0.15s;
   pointer-events: none;
+  z-index: 100;
 }
 
 .profile-tooltip {

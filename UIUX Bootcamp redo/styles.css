@@ -1,0 +1,154 @@
+*{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+body{
+    padding: 20px 120px;
+}
+
+.logo img{
+    width: 110px;
+    object-position: center;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.top-article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.top-article .title{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    line-height: 5px;
+}
+
+.top-article h1{
+    font-size: 30px;
+    font-weight: 600;
+    /* line-height: 5px; */
+}
+
+.title p{
+    font-weight: 600;
+}
+
+.top-article .description{
+    color: gray;
+    line-height: 20px;
+    margin-top:0px;
+    margin-bottom: 60px;
+}
+
+.session-details .note{
+    color: gray;
+    line-height: 24px;
+    padding: 0px 18px;
+    border-left: 1px solid #6202FF;
+    margin-bottom: 40px;
+
+}
+
+.session-details .price{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.session-details .starting-date{
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: small;
+}
+
+.reg-buttons button{
+    padding: 15px 15px;
+    background-color: #6202FF;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.reg-buttons button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.reg-buttons button:active{
+    transform: scale(0.9);
+}
+
+.reg-buttons a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.why-join h2, 
+.curriculum h2{
+    margin-top: 100px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.why-join .perks{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.why-join .perks h3,
+.curriculum .outline h3{
+    font-weight: 400;
+}
+
+.why-join .perks div,
+.curriculum .outline div{
+    padding: 20px;
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #FBF8FF;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+
+.why-join .perks div p{
+    color: gray;
+    line-height: 26.5px;
+    font-size: 18px;
+}
+.curriculum .outline div{
+    margin-bottom: 0px;
+}
+
+.curriculum .outline div h3{
+    line-height: 6px;
+}
+
+.curriculum .outline div .outline-title,
+.curriculum .outline div .duration{
+    margin-top: 0px;
+    color: gray;
+    line-height: 8px;
+}
+
+.curriculum .outline div .duration{
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.curriculum .outline{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+}
+
+footer{
+    margin-top: 50px;
+}
