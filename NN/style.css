@@ -1,0 +1,164 @@
+body{
+    background: url(/NN/pexels.jpg);
+    background-position: cover;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+/*--HEADER--*/
+header {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    background-color: transparent;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+.left-section{
+    margin: 0px 0px 0px 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left-section img{
+    width: 100%;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.middle-section {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.middle-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.middle-section ul li {
+    margin: 0 15px;
+}
+
+.middle-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-right: 50px;
+}
+
+.right-section button{
+    padding:  5px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 5px;
+    /* height: fit-content; */
+}
+
+.right-section button:last-child{
+    margin-right: 0;
+}
+
+.right-section button a{
+    color: white;
+    text-decoration: none;
+    font-weight: none;
+    font-size: 10px;
+}
+
+
+/*--------SIGN IN SECTION---------*/
+
+.content{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.sign-in{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    right: 200px;
+    width: 400px;
+    height: 300px;
+    border-radius: 2px;
+
+}
+
+.sign-in input{
+    margin: 0px 20px;
+    border-radius: 2px;
+}
+
+.sign-in input:first-child{
+    margin-top: 25px;
+}
+
+.sign-in input{
+    font-family: 'JetBrains Mono', monospace;
+    margin: 10px 20px 0px 20px;
+    border: none;
+    background-color: #CFD8DC;
+    border-radius: 3px;
+    color: white;
+    height: 25px;
+}
+
+::placeholder{
+    color: white;
+    font-size: small;
+}
+
+.sign-in input:focus{
+    outline: none;
+}
+.sign-in button{
+    background-color: rgba(8, 8, 8, 0.404);
+    border: none;
+    margin: 20px 20px;
+    height: 35px;
+    background-color: #263238;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.sign-in button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 10px;
+    background-color: none;
+}
+
