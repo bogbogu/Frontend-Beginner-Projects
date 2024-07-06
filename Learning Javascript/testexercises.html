@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Exercises</title>
+</head>
+<body>
+    <script>
+        /*function greet(name='there') {
+        console.log(`Hello ${name}!`);
+        }
+        greet();
+
+        function convertLength(length, from, to) {
+                if (from==='km' && to==='m') {
+                    result = length * 1000;
+                } else if ( from==='m' && to==='km') {
+                    result = length / 1000;
+                }
+
+            console.log(`${length}${from} to ${to} is ${result}${to}`);
+        }
+
+        convertLength(50, 'm','km');
+
+        const basketball = {
+            name: 'basketball',
+            price: 2095
+        };
+
+        basketball['delivery-time'] = '3 days';
+        console.log(basketball);*/
+
+        const product1 = {
+            name: 'Bokku',
+            type: 'bread',
+            price: 1150
+        };
+        
+        const product2 = {
+            name: 'PickNPay',
+            type: 'bread',
+            price: 1600
+        };
+
+        function lowerPrice (prod1, prod2) {
+            let cheaperProduct = (prod1.price < prod2.price) ? prod1 : prod2;
+            console.log( `The cheaper product is ${cheaperProduct.name} which costs ${cheaperProduct.price}`);
+
+            if (prod1.price < prod2.price) {
+                console.log( `The cheaper product is ${prod1.name} which costs ${prod1.price}`)
+            } else if ( prod2.price < prod1.price) {
+                console.log( `The cheaper product is ${prod2.name} which costs ${prod2.price}`)
+            }
+        };
+
+        lowerPrice(product1, product2);
+
+
+    </script>
+</body>
+</html>
