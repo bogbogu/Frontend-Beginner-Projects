@@ -44,17 +44,28 @@
             price: 1600
         };
 
-        function lowerPrice (prod1, prod2) {
-            let cheaperProduct = (prod1.price < prod2.price) ? prod1 : prod2;
-            console.log( `The cheaper product is ${cheaperProduct.name} which costs ${cheaperProduct.price}`);
+        // function lowerPrice (prod1, prod2) {
+        //     let cheaperProduct = (prod1.price < prod2.price) ? prod1 : prod2;
+        //     console.log( `The cheaper product is ${cheaperProduct.name} which costs ${cheaperProduct.price}`);
 
-            if (prod1.price < prod2.price) {
-                console.log( `The cheaper product is ${prod1.name} which costs ${prod1.price}`)
-            } else if ( prod2.price < prod1.price) {
-                console.log( `The cheaper product is ${prod2.name} which costs ${prod2.price}`)
-            }
+        //     if (prod1.price < prod2.price) {
+        //         console.log( `The cheaper product is ${prod1.name} which costs ${prod1.price}`)
+        //     } else if ( prod2.price < prod1.price) {
+        //         console.log( `The cheaper product is ${prod2.name} which costs ${prod2.price}`)
+        //     }
+        // };
+
+        // lowerPrice(product1, product2);
+
+        function lowerPrice(prod1, prod2) {
+        const message = (prod1.price < prod2.price) 
+            ? `The cheaper product is ${prod1.name} which costs ${prod1.price}`
+            : (prod1.price > prod2.price)
+            ? `The cheaper product is ${prod2.name} which costs ${prod2.price}`
+            : 'Both products have the same price';
+        
+            console.log(message);
         };
-
         lowerPrice(product1, product2);
 
 
