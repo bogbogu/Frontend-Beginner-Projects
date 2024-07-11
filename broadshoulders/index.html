@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body style="height: 5000px;">
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="left-section">
+                <div class="logo">
+                    <a href="#"><img src="/broadshoulders/logo3.png" alt=""></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Work</a></li>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">Stories &amp; Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <button class="wtg-button"><a href="#">WAYS TO GIVE</a></button>
+                <button class="ta-button"><a href="#">TAKE ACTION</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="top-content">
+            <div class="support">
+                <h1>Join <h1 class="hands">Hands</h1><br>with us</h1>
+                <h3>Empower Lives<br>Make an Impact</h3>
+                <button>Support Today</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="text-content">
+            <div class="about-us">
+                <ul>
+                    <li><a class="list-header" href="#">ABOUT US</a></li>
+                    <li><a href="#">Non-Profit Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Board Members Login</a></li>
+                </ul>
+            </div>
+            <div class="child-care">
+                <ul>
+                    <li><a class="list-header" href="#">CHILD CARE</a></li>
+                    <li><a href="#">Our Approach</a></li>
+                    <li><a href="#">Infant Child Care</a></li>
+                    <li><a href="#">Toddler Child Care</a></li>
+                    <li><a href="#">Preschool Child Care</a></li>
+                    <li><a href="#">Flexible Child Care</a></li>
+                    <li><a href="#">Home Child Care</a></li>
+                    <li><a href="#">Child Care FAQ</a></li>
+                    <li><a href="#">Nursery Care</a></li>
+                </ul>
+            </div>
+            <div class="become">
+                <div class="program">
+                    <ul>
+                        <li><a class="list-header" href="#">CHILD CARE PROVIDER PROGRAM</a></li>
+                        <li><a href="#">Become a Provider</a></li>
+                        <li><a href="#">Home Child Care FAQ</a></li>
+                        <li><a href="#">Provider Portal</a></li>
+                    </ul>
+                </div>
+                <div class="register">
+                    <div class="reg">
+                        <ul>
+                            <li><a class="list-header" href="#">REGISTRATION</a></li>
+                            <li><a href="#">Registration</a></li>
+                            <li><a href="#">Registration FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="early-on">
+                        <ul>
+                            <li><a class="list-header" href="#">EARLYON</a></li>
+                            <li><a href="#">Playgroups</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <ul>
+                    <li><a class="list-header" href="#">CONTACT US</a></li>
+                    <li><a href="#">1099 Longfields Dr. <br>Nepean, Ontario, K2J 5L2 </a></li>
+                    <li><a href="#">Group Child Care: 613-823-8244</a></li>
+                    <li><a href="#">Home Child Care: 613-823-7088</a></li>
+                    <li><a href="#">Nursery School: 613-825-5990</a></li>
+                    <li><a href="#">EarlyON: 613-825-5990</a></li>
+                    <li><a href="#">info@cityviewcentre.ca</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 0) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>  
+</body>
+</html>
