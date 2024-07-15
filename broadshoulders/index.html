@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
-
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body style="height: 5000px;">
+<body>
     <header class="header" id="header">
         <nav class="navbar">
             <div class="left-section">
                 <div class="logo">
-                    <a href="#"><img src="/broadshoulders/logo3.png" alt=""></a>
+                    <a href="#"><img src="/broadshoulders/logo/logo2.png" alt=""></a>
                 </div>
                 <div class="menu">
                     <ul>
@@ -34,75 +35,261 @@
     </header>
 
     <main class="main">
-        <div class="top-content">
-            <div class="support">
-                <h1>Join <h1 class="hands">Hands</h1><br>with us</h1>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Join <span>Hands</span> <br>with <span>us</span> </h1>
                 <h3>Empower Lives<br>Make an Impact</h3>
                 <button>Support Today</button>
             </div>
-        </div>
+        </section>
+  
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are committed to uplifting and empowering communities through various initiatives and support programs.</p>
+            <img src="/broadshoulders/stories/luth3.jpg" alt="About Us">
+        </section>
+        
+        <section id="stories">
+            <h2>Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story">
+                    <h3>Story Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus, obcaecati iusto veritatis, libero quod aut modi quisquam eligendi aspernatur optio. 
+                        Maxime, laudantium. Earum labore ipsum placeat, veniam aut consequuntur?</p>
+                    <img src="/broadshoulders/founder_pics/founder_with_nurses.jpg" alt="Story 1">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="story">
+                    <h3>Story Title 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus, obcaecati iusto veritatis, libero quod aut modi quisquam eligendi aspernatur optio. 
+                        Maxime, laudantium. Earum labore ipsum placeat, veniam aut consequuntur?</p>
+                    <img src="/broadshoulders/bg/at_hospital.jpg" alt="Story 2">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="story">
+                    <h3>Story Title 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus, obcaecati iusto veritatis, libero quod aut modi quisquam eligendi aspernatur optio. 
+                        Maxime, laudantium. Earum labore ipsum placeat, veniam aut consequuntur?</p>
+                    <img src="/broadshoulders/stories/luth.jpg" alt="Story 2">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="story">
+                    <h3>Story Title 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus, obcaecati iusto veritatis, libero quod aut modi quisquam eligendi aspernatur optio. 
+                        Maxime, laudantium. Earum labore ipsum placeat, veniam aut consequuntur?</p>
+                    <img src="/broadshoulders/stories/luth1.jpg" alt="Story 2">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="story">
+                    <h3>Story Title 5</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus, obcaecati iusto veritatis, libero quod aut modi quisquam eligendi aspernatur optio. 
+                        Maxime, laudantium. Earum labore ipsum placeat, veniam aut consequuntur?</p>
+                    <img src="/broadshoulders/stories/luth2.jpg" alt="Story 2">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="story">
+                    <h3>Story Title 6</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus, obcaecati iusto veritatis, libero quod aut modi quisquam eligendi aspernatur optio. 
+                        Maxime, laudantium. Earum labore ipsum placeat, veniam aut consequuntur?</p>
+                    <img src="/broadshoulders/stories/luth3.jpg" alt="Story 2">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="story">
+                    <h3>Story Title 7</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti accusamus, obcaecati iusto veritatis, libero quod aut modi quisquam eligendi aspernatur optio. 
+                        Maxime, laudantium. Earum labore ipsum placeat, veniam aut consequuntur?</p>
+                    <img src="/broadshoulders/stories/luth4.jpg" alt="Story 2">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="contact-info">
+                <p>Address: 123 Main Street, City, Country</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Email: info@broadshoulderstribe.org</p>
+                <div class="map">
+                    <!-- Embed Google Map -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="sponsors">
+            <h2>Our Sponsors</h2>
+            <div class="sponsors-logos">
+                <img src="/broadshoulders/founder_pics/founder.jpg" alt="Sponsor 1">
+                <img src="/broadshoulders/founder_pics/founder_with_brand.jpg" alt="Sponsor 2">
+            </div>
+            <p>Interested in becoming a sponsor? <a href="#">Contact us</a> for more information.</p>
+        </section>
+
+
+        <section id="impact">
+            <h4>Our Cause</h4>
+            <h2>We Must Always Be On The Side Of People</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Soluta laborum dolores explicabo suscipit dolorem asperiores sunt alias, 
+                vitae aspernatur natus quasi recusandae facilis esse temporibus aut minima. Quis, ullam iure?
+            </p>
+        
+            <div id="cards">
+                <div class="card-container">
+                    <div class="card-up">
+                        <img src="/broadshoulders/bg/bst1.jpg" alt="">
+                        <h3>Helping Others</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                            nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                        </p>
+                        <h4><a href="#">Donate Now &#8594;</a></h4>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-down">
+                        <img src="/broadshoulders/bg/bst2.jpg" alt="">
+                        <h3>Helping Others</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                            nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                        </p>
+                        <h4><a href="#">Donate Now &#8594;</a></h4>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-up">
+                        <img src="/broadshoulders/bg/bst1.jpg" alt="">
+                        <h3>Helping Others</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                            nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                        </p>
+                        <h4><a href="#">Donate Now &#8594;</a></h4>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-down">
+                        <img src="/broadshoulders/bg/hero-bg.jpg" alt="">
+                        <h3>Helping Others</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                            nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                        </p>
+                        <h4><a href="#">Donate Now &#8594;</a></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <section id="impact">
+            <h4>Our Cause</h4>
+            <h2>We Must Always Be On The Side Of People</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Soluta laborum dolores explicabo suscipit dolorem asperiores sunt alias, 
+                vitae aspernatur natus quasi recusandae facilis esse temporibus aut minima. Quis, ullam iure?
+            </p>
+
+            <div id="cards">
+                <div class="card-up">
+                    <img src="/broadshoulders/bg/bst1.jpg" alt="">
+                    <h3>Quenching Thirst</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                        nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                    </p>
+                    <h4><a href="#">Donate Now &#8594;</a></h4>
+                </div>
+                <div class="card-down">
+                    <img src="/broadshoulders/bg/bst2.jpg" alt="">
+                    <h3>Quenching Thirst</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                        nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                    </p>
+                    <h4><a href="#">Donate Now &#8594;</a></h4>
+                </div>
+                <div class="card-up">
+                    <img src="/broadshoulders/bg/bst1.jpg" alt="">
+                    <h3>Quenching Thirst</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                        nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                    </p>
+                    <h4><a href="#">Donate Now &#8594;</a></h4>
+                </div>
+                <div class="card-down">
+                    <img src="/broadshoulders/bg/bst2.jpg" alt="">
+                    <h3>Quenching Thirst</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illo rerum assumenda doloremque facilis nihil nemo delectus 
+                        nostrum corporis ducimus, quidem consectetur est temporibus veritatis itaque voluptate minus voluptatum mollitia.
+                    </p>
+                    <h4><a href="#">Donate Now &#8594;</a></h4>
+                </div>
+            </div>
+        </section> -->
+
     </main>
     <footer class="footer">
         <div class="text-content">
+            <img class="footer-logo" src="/broadshoulders/logo/logo2.png" alt="">
+
             <div class="about-us">
                 <ul>
-                    <li><a class="list-header" href="#">ABOUT US</a></li>
-                    <li><a href="#">Non-Profit Mission</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Board of Directors</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Board Members Login</a></li>
+                    <li class="list-header">ABOUT US</li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Impact Stories</a></li>
                 </ul>
             </div>
-            <div class="child-care">
+            <div class="get-involved">
                 <ul>
-                    <li><a class="list-header" href="#">CHILD CARE</a></li>
-                    <li><a href="#">Our Approach</a></li>
-                    <li><a href="#">Infant Child Care</a></li>
-                    <li><a href="#">Toddler Child Care</a></li>
-                    <li><a href="#">Preschool Child Care</a></li>
-                    <li><a href="#">Flexible Child Care</a></li>
-                    <li><a href="#">Home Child Care</a></li>
-                    <li><a href="#">Child Care FAQ</a></li>
-                    <li><a href="#">Nursery Care</a></li>
+                    <li class="list-header">GET INVOLVED</li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Mentorship</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Partner with Us</a></li>
                 </ul>
             </div>
-            <div class="become">
-                <div class="program">
+            <div class="resources">
+                <ul>
+                    <li class="list-header">RESOURCES</li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="media-links">
+                <div class="contacts">
                     <ul>
-                        <li><a class="list-header" href="#">CHILD CARE PROVIDER PROGRAM</a></li>
-                        <li><a href="#">Become a Provider</a></li>
-                        <li><a href="#">Home Child Care FAQ</a></li>
-                        <li><a href="#">Provider Portal</a></li>
+                        <li class="list-header">CONTACT US</li>
+                        <li><a href="#">123 Main Street, <br> London, UK</a></li>
+                        <li><a href="#">Phone: +123 456 7890</a></li>
+                        <li><a href="#">Email: info@broadshoulderstribe.com</a></li>
                     </ul>
                 </div>
-                <div class="register">
-                    <div class="reg">
-                        <ul>
-                            <li><a class="list-header" href="#">REGISTRATION</a></li>
-                            <li><a href="#">Registration</a></li>
-                            <li><a href="#">Registration FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="early-on">
-                        <ul>
-                            <li><a class="list-header" href="#">EARLYON</a></li>
-                            <li><a href="#">Playgroups</a></li>
-                        </ul>
-                    </div>
+                
+                <div class="media-buttons">
+                    <div id="follow">Follow Us on Social Media</div>
+                    <a href="#" class="link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#" class="link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="#" class="link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="#" class="link">
+                        <i class='bx bxl-youtube' ></i>
+                    </a>
                 </div>
-            </div>
-            <div class="contacts">
-                <ul>
-                    <li><a class="list-header" href="#">CONTACT US</a></li>
-                    <li><a href="#">1099 Longfields Dr. <br>Nepean, Ontario, K2J 5L2 </a></li>
-                    <li><a href="#">Group Child Care: 613-823-8244</a></li>
-                    <li><a href="#">Home Child Care: 613-823-7088</a></li>
-                    <li><a href="#">Nursery School: 613-825-5990</a></li>
-                    <li><a href="#">EarlyON: 613-825-5990</a></li>
-                    <li><a href="#">info@cityviewcentre.ca</a></li>
-                </ul>
             </div>
             </div>
         </div>
